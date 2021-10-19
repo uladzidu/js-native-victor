@@ -47,3 +47,13 @@ const students = [
 
 
 const stTostring = st => `Hi! I am ${st.name}. I have ${st.scores}`
+
+// const strings = students.map(stTostring);
+
+const strings = students.map(st => `Hi! I am ${st.name}. I have ${st.scores}`);
+
+
+
+console.log(strings)
+
+const copyStudents = students.map(st => ( {...st} ) ) 
