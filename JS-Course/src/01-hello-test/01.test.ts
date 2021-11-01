@@ -1,23 +1,23 @@
 import { NumberLiteralType } from "typescript";
-import {mult, splitIntoWords, sum} from "./01"
+import { mult, splitIntoWords, sum } from "./01"
 
-let a : number;
-let b : number;
-let c : Number;
+let a: number;
+let b: number;
+let c: Number;
 
-beforeEach( () => {
+beforeEach(() => {
     a = 1
     b = 2
     c = 3
-} )
+})
 
 
-test ('sum should be correct' , () => {
+test('sum should be correct', () => {
     //data
     a = 100;
 
     //action
-    const result = sum(a,b);
+    const result = sum(a, b);
 
     //expect result
 
@@ -26,14 +26,14 @@ test ('sum should be correct' , () => {
 })
 
 
-test ('multiply should be correct' , () => {
+test('multiply should be correct', () => {
     //data
     const a = 1;
     const b = 2;
     const c = 3;
 
     //action
-    const result = mult(b,c);
+    const result = mult(b, c);
 
     //expect result
 
@@ -41,11 +41,11 @@ test ('multiply should be correct' , () => {
 
 })
 
-test ('split into words should be correct' , () => {
+test('split into words should be correct', () => {
     //data
     const sent1 = "hello my friend!";
     const sent2 = "js the best programming language";
-    
+
 
     //action
     const result1 = splitIntoWords(sent1)
