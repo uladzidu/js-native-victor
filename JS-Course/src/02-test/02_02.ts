@@ -4,3 +4,5 @@ export type CityType = {
     governmentBuildings : Array<string>
     citizensNumber : number
 }
+
+
