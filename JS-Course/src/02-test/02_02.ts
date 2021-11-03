@@ -21,15 +21,15 @@ export type CityType = {
 
 
 export type StreetGovType = {
-    title : string
+    title: string
 }
 export type AdressGovType = {
-    street : StreetGovType
+    street: StreetGovType
 }
 export type GoverType = {
-    type : "HOSPITAL" | "FIRE-STATION"
-    budget : number
-    staffCount : number
-    adress : AdressGovType
+    type: "HOSPITAL" | "FIRE-STATION"
+    budget: number
+    staffCount: number
+    adress: AdressGovType
 }
 
