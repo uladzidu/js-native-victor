@@ -12,7 +12,7 @@ beforeEach(() => {
 })
 
 
-test('sum should be correct', () => {
+test.skip('sum should be correct', () => {
     //data
     a = 100;
 
@@ -26,7 +26,7 @@ test('sum should be correct', () => {
 })
 
 
-test('multiply should be correct', () => {
+test.skip('multiply should be correct', () => {
     //data
     const a = 1;
     const b = 2;
@@ -41,7 +41,7 @@ test('multiply should be correct', () => {
 
 })
 
-test('split into words should be correct', () => {
+test.skip('split into words should be correct', () => {
     //data
     const sent1 = "hello my friend!";
     const sent2 = "js the best programming language";

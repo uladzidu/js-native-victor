@@ -1,13 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { splitIntoWords } from './01-hello-test/01';
+import { sum } from './03-test/03';
 import {App} from './App';
 import './index.css';
 import * as serviceWorker from './serviceWorker';
 
-const sentense = "Hello my friends!"
-const result = splitIntoWords(sentense)
-console.log(result);
+var a = sum;
+
 
 
 
