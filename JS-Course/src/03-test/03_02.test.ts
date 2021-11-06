@@ -110,8 +110,6 @@ test("staff should be repared", () => {
 
 test("Greeting message" , () => {
 
-    const message = createMessage(city)
-
-    expect(message).toBe("Hello New York citizens. All 1000000 of you ")
+    expect(createMessage(city)).toBe("Hello New York citizens. All 1000000 of you ")
 
 })

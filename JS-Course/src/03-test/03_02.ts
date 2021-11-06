@@ -17,6 +17,7 @@ export const toHireStaff = (st : GoverType , staffToFire : number ) => {
     st.staffCount += staffToFire
 }
 
-export function createMessage (city : CityType) {
-    return "Hello " + city.title + " citizens. All " + city.citizensNumber + " of you "
+export function createMessage (props : CityType) {
+    // return "Hello " + props.title + " citizens. All " + props.citizensNumber + " of you "
+    return `Hello ${props.title} citizens. All ${props.citizensNumber} of you `
 }
