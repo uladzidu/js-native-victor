@@ -1,8 +1,14 @@
-import { student, StudentType } from "../02-test/02";
+import { student, StudentType } from "../02-test/02"
+
 
 export const sum = (a: number, b: number) => {
     return a + b;
 }
+
+export function sum2 (a: number, b: number) {
+    return a + b;
+}
+
 
 
 export const addSkill = (student: StudentType, skill: string) => {
@@ -11,14 +17,6 @@ export const addSkill = (student: StudentType, skill: string) => {
         title: skill
     })
 }
-
-export function makeStudentPassive(s: StudentType) {
-    s.isActive = false
-}
-
-
-
-
 
 
 
