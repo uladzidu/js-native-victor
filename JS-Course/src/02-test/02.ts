@@ -24,6 +24,7 @@ export type StudentType = {
 }
 
 export const student: StudentType = {
+    id :1,
     name: "Vlad",
     age: 24,
     isActive: true,
