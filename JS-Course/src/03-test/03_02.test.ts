@@ -67,7 +67,7 @@ beforeEach(() => {
 
 test.skip("Budget should be changed for HOSPITAL", () => {
 
-    addMoneyToBudget(city.governmentBuildings[0], 100000);
+    addMoneyToBudget(city.governmentBuildings[1], -100000);
 
     expect(city.governmentBuildings[0].budget).toBe(300000)
 
