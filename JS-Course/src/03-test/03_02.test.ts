@@ -1,5 +1,5 @@
-import { CityType } from "../02-test/02_02";
-import { addMoneyToBudget, createMessage, repairHouses, toFireStaff, toHireStaff } from "./03_02";
+import {CityType} from "../02-test/02_02";
+import {addMoneyToBudget, createMessage, repairHouses, toFireStaff, toHireStaff} from "./03_02";
 
 let city: CityType;
 
@@ -65,13 +65,6 @@ beforeEach(() => {
 })
 
 
-
-
-
-
-
-
-
 test.skip("Budget should be changed for HOSPITAL", () => {
 
     addMoneyToBudget(city.governmentBuildings[0], 100000);
@@ -87,10 +80,10 @@ test.skip("Budget should be changed for FIRE-STATION", () => {
 
 })
 
-test.skip("House should be repaired", ()=> {
+test.skip("House should be repaired", () => {
     repairHouses(city.houses[1]);
     expect(city.houses[1].repaired).toBeTruthy();
-}  )
+})
 
 test.skip("staff should be increased", () => {
 
@@ -108,7 +101,7 @@ test("staff should be repared", () => {
     expect(city.governmentBuildings[1].staffCount).toBe(1100)
 })
 
-test("Greeting message" , () => {
+test("Greeting message", () => {
 
     expect(createMessage(city)).toBe("Hello New York citizens. All 1000000 of you ")
 
