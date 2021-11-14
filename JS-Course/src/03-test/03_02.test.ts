@@ -92,7 +92,7 @@ test.skip("staff should be increased", () => {
     expect(city.governmentBuildings[0].staffCount).toBe(180)
 })
 
-test("staff should be repared", () => {
+test.skip("staff should be repared", () => {
 
     toHireStaff(city.governmentBuildings[0], 20)
     toHireStaff(city.governmentBuildings[1], 100)
@@ -101,7 +101,7 @@ test("staff should be repared", () => {
     expect(city.governmentBuildings[1].staffCount).toBe(1100)
 })
 
-test("Greeting message", () => {
+test.skip("Greeting message", () => {
 
     expect(createMessage(city)).toBe("Hello New York citizens. All 1000000 of you ")
 

@@ -21,3 +21,5 @@ export function createMessage(props: CityType) {
     // return "Hello " + props.title + " citizens. All " + props.citizensNumber + " of you "
     return `Hello ${props.title} citizens. All ${props.citizensNumber} of you `
 }
+
+

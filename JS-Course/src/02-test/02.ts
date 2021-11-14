@@ -1,3 +1,4 @@
+import {splitIntoWords} from '../01-hello-test/01';
 
 type LocalCityType = {
     title: string

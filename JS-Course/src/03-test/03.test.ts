@@ -34,7 +34,7 @@ beforeEach(() => {
 })
 
 
-test("new skill should be added to student", () => {
+test.skip("new skill should be added to student", () => {
 
     expect(student.technologies.length).toBe(3);
 
@@ -45,7 +45,7 @@ test("new skill should be added to student", () => {
     expect(student.technologies[3].title).toBe("JS")
 })
 
-test("boolean should be true", () => {
+test.skip("boolean should be true", () => {
 
     expect(student.isActive).toBe(false);
 
@@ -56,7 +56,7 @@ test("boolean should be true", () => {
 })
 
 
-test("does student live in city?", () => {
+test.skip("does student live in city?", () => {
 
 let result1 = doesStudentLiveInCity(student, "Moscow")
 let result2 = doesStudentLiveInCity(student, "Wroclaw")
