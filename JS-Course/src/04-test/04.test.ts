@@ -43,7 +43,7 @@ test.skip('get only completed tasks', () => {
 })
 
 
-test('get only uncompleted tasks', () => {
+test.skip('get only uncompleted tasks', () => {
 
     const tasks = [
         {id: 1, title: 'bread', isDone: false},
