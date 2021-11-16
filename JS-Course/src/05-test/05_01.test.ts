@@ -1,5 +1,5 @@
 import {CityType} from '../02-test/02_02';
-import {getStreetsTitlesOfGoverBuildings, getStreetsTitlesOfHouses} from './05_01';
+import {getStreetsTitlesOfGoverBuildings, getStreetsTitlesOfHouse} from './05_01';
 
 let city: CityType;
 
@@ -61,12 +61,23 @@ beforeEach(() => {
     }
 })
 
-test('List of streets name', () => {
+test.skip('List of streets name', () => {
 
     let streets = getStreetsTitlesOfGoverBuildings(city.governmentBuildings)
 
     expect(streets.length).toBe(2)
     expect(streets[0]).toBe('Central Str')
     expect(streets[1]).toBe('South Str')
+
+})
+
+test('List of streets titles of houses', () => {
+
+    let houses = getStreetsTitlesOfHouse(city.houses)
+
+    expect(houses.length).toBe(3)
+    expect(houses[0]).toBe('White street')
+    expect(houses[1]).toBe('Happy street')
+    expect(houses[2]).toBe('Happy street')
 
 })
