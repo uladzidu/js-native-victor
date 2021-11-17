@@ -1,5 +1,5 @@
 import {CityType} from '../02-test/02_02';
-import {getStreetsTitlesOfGoverBuildings, getStreetsTitlesOfHouse} from './05_01';
+import {budgetMessage, getStreetsTitlesOfGoverBuildings, getStreetsTitlesOfHouse, greetingMessage} from './05_01';
 
 let city: CityType;
 
@@ -71,7 +71,7 @@ test.skip('List of streets name', () => {
 
 })
 
-test('List of streets titles of houses', () => {
+test.skip('List of streets titles of houses', () => {
 
     let houses = getStreetsTitlesOfHouse(city.houses)
 
@@ -79,5 +79,26 @@ test('List of streets titles of houses', () => {
     expect(houses[0]).toBe('White street')
     expect(houses[1]).toBe('Happy street')
     expect(houses[2]).toBe('Happy street')
+
+})
+
+test.skip('Greeting message for citizens', () => {
+
+    let message = greetingMessage(city.houses)
+
+    expect(message.length).toBe(3)
+    expect(message[0]).toBe('Hello from White street ')
+    expect(message[1]).toBe('Hello from Happy street ')
+    expect(message[2]).toBe('Hello from Happy street ')
+
+})
+
+test.skip('Message for budget', () => {
+
+    let budget = budgetMessage(city.governmentBuildings)
+
+    expect(budget.length).toBe(2)
+    expect(budget[0]).toBe('Your budget is 200000')
+    expect(budget[1]).toBe('Your budget is 500000')
 
 })
