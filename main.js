@@ -1,22 +1,3 @@
-const bob = {
-    name : "Bob",
-    age : 23,
-    isStudent : true,
-    friends : ["Ann", "Dimon"]
-}
-
-const alex = bob
-alex.name = "Alex"
-
-//const copyBob = {...bob}
-
-const copyBob = {...bob, friends : [...bob.friends]}
-
-bob.name = "Bob"
-bob.friends.push("Helga")
-console.log(bob)
-console.log(copyBob)
-
 
 const students = [
     {
@@ -46,14 +27,9 @@ const students = [
 ]
 
 
-const stTostring = st => `Hi! I am ${st.name}. I have ${st.scores}`
+const arrayOfNames = students.map( element => element.name )
 
-// const strings = students.map(stTostring);
+const increasedScoresInStudents = students.map(e => e)
 
-const strings = students.map(st => `Hi! I am ${st.name}. I have ${st.scores}`);
-
-
-
-console.log(strings)
-
-const copyStudents = students.map(st => ( {...st} ) ) 
+console.log(students)
+console.log(increasedScoresInStudents)
