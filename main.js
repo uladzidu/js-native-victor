@@ -26,10 +26,23 @@ const students = [
     }
 ]
 
+const big = document.querySelector('.big')
+const medium = document.querySelector('.medium')
+const small = document.querySelector('.small')
+const link = document.querySelector('a')
 
-const arrayOfNames = students.map( element => element.name )
+function onClickHandler(e) {
+    console.log(e.target.id)
+    console.log('-----------------')
+}
 
-const increasedScoresInStudents = students.map(e => e)
+link.addEventListener('click', (e) => {e.preventDefault()} )
 
-console.log(students)
-console.log(increasedScoresInStudents)
+medium.addEventListener('click', onClickHandler)
+big.addEventListener('click', onClickHandler)
+small.addEventListener('click', onClickHandler)
+
+
+
+
+
